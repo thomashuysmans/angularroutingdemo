@@ -1,0 +1,13 @@
+<h1>Overview Products</h1>
+
+<div>
+  <ul>
+    <li><a [routerLink]="['computers']">Computers</a></li>
+    <li><a [routerLink]="['books/', 14]">Books</a></li>
+  </ul>
+  Enter book id: <input #id size="6">
+  <button (click)="goToBookWithId(id.value)">Go</button>
+
+  <router-outlet></router-outlet>
+</div>
+
